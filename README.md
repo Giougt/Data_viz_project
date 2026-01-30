@@ -6,6 +6,7 @@ Il permet de visualiser les flux de vols entre aéroports, de filtrer les donné
 
 L’objectif est d’offrir une interface claire et intuitive pour comprendre les dynamiques du transport aérien à l’échelle mondiale.
 
+page github : https://giougt.github.io/Data_viz_project/
 ##  Fonctionnalités principales
 
 ###  Carte interactive du monde
@@ -48,4 +49,5 @@ Les données proviennent de **OpenFlights (open data)** et ont été agrégées 
 - **countries.geo.json** : géométrie des pays au format GeoJSON  
 
 Seules les routes les plus significatives sont représentées afin de réduire la complexité visuelle.
+
 
