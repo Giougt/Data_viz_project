@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trafic aérien mondial - D3.js</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Trafic aérien mondial</h1>
+    <p>Visualisation des flux aériens mondiaux à l’aide de D3.js</p>
+  </header>
+
+<main>
+  <section id="map-section">
+    <h2>Carte mondiale des routes aériennes</h2>
+    <p>Cette carte montre tous les aéroports et les routes aériennes représentatives. 
+       Vous pouvez filtrer par aéroport pour mettre en évidence les vols associés.</p>
+
+    <div id="map-container">
+      <div id="filter-panel">
+        <label for="airport-select">Filtrer par aéroport :</label>
+        <select id="airport-select">
+          <option value="all">Tous</option>
+        </select>
+      </div>
+
+      <svg id="map"></svg>
+    </div>
+  </section>
+  
+  <section id="chart-section">
+    <h2>Top aéroports par volume de trafic</h2>
+    <p>Le diagramme ci-dessous montre le nombre total de vols (départs + arrivées) pour chaque aéroport. 
+       Les aéroports sont classés du plus actif au moins actif.</p>
+    <svg id="chart"></svg>
+  </section>
+
+  <section id="line-chart-section">
+    <h2>Nombre de départs par pays</h2>
+    <p>Ce diagramme circulaire indique la répartition des départs par pays pour les vols représentés. 
+       Les portions les plus grandes correspondent aux pays avec le plus de départs.</p>
+    <svg id="line-chart"></svg>
+  </section>
+</main>
+
+
+<footer>
+  <p>
+    Projet D3.js – Données issues d’OpenFlights |
+    <a href="https://github.com/Giougt/Data_viz_project" target="_blank">
+      Voir sur GitHub
+    </a>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
